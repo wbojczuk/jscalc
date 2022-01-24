@@ -198,7 +198,6 @@ var total;
     }
 
     function sqrrt() {
-        document.getElementById("printMethodTwo").innerHTML = "&radic;";
         valueOne = parseInt(input);
         total = Math.sqrt(valueOne);
         document.getElementById("printValueOne").innerHTML = total.toFixed(4);
