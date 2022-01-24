@@ -116,6 +116,7 @@ var total;
     function addd() {
         valueOne = parseInt(input);
         method = "add";
+        document.getElementById("printMethodTwo").innerHTML = "";
         document.getElementById("printMethod").innerHTML = "+";
         document.getElementById("printValueOne").innerHTML = valueOne.toString();
         document.getElementById("inputOne").setAttribute("onclick", "inputOne2();")
@@ -136,7 +137,8 @@ var total;
     function multiplyy() {
         valueOne = parseInt(input);
         method = "multiply";
-        document.getElementById("printMethod").innerHTML = "*";
+        document.getElementById("printMethodTwo").innerHTML = "";
+        document.getElementById("printMethod").innerHTML = "&times;";
         document.getElementById("printValueOne").innerHTML = valueOne.toString();
         document.getElementById("inputOne").setAttribute("onclick", "inputOne2();")
         document.getElementById("inputTwo").setAttribute("onclick", "inputTwo2();")
@@ -156,6 +158,7 @@ var total;
     function subtractt() {
         valueOne = parseInt(input);
         method = "subtract";
+        document.getElementById("printMethodTwo").innerHTML = "";
         document.getElementById("printMethod").innerHTML = "-";
         document.getElementById("printValueOne").innerHTML = valueOne.toString();
         document.getElementById("inputOne").setAttribute("onclick", "inputOne2();")
@@ -176,6 +179,7 @@ var total;
     function dividee() {
         valueOne = parseInt(input);
         method = "divide";
+        document.getElementById("printMethodTwo").innerHTML = "";
         document.getElementById("printMethod").innerHTML = "/";
         document.getElementById("printValueOne").innerHTML = valueOne.toString();
         document.getElementById("inputOne").setAttribute("onclick", "inputOne2();")
@@ -194,7 +198,7 @@ var total;
     }
 
     function sqrrt() {
-        document.getElementById("printMethod").innerHTML = "&radic;";
+        document.getElementById("printMethodTwo").innerHTML = "&radic;";
         valueOne = parseInt(input);
         total = Math.sqrt(valueOne);
         document.getElementById("printValueOne").innerHTML = total.toFixed(4);
@@ -212,6 +216,7 @@ var total;
     // Calculating
     function equals(){
     valueTwo = parseInt(input2);
+    document.getElementById("printMethodTwo").innerHTML = "";
   
         if (method == "add"){
             total = parseInt(valueOne) + parseInt(valueTwo);

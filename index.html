@@ -21,6 +21,7 @@
     <div class="calc-wrapper-3d">
     <div class="output-wrapper">
     <div class="print-output" id="printOutput">
+        <span id="printMethodTwo"></span>
         <span id="printValueOne">0</span>
         <span id="printMethod"></span>
         <span id="printValueTwo"></span>
@@ -33,14 +34,8 @@
     <!-- MATHSSS -->
 
     <div class="center button-row">
-        <button class="input-button" id="divide" onclick="dividee();">/</button>
-        <button class="input-button" id="sqrrt" onclick="sqrrt();">&radic;</button>
-    </div>
-
-    <div class="center button-row">
-        <button class="input-button" id="add" onclick="addd();">+</button>
-        <button class="input-button" id="subtractt" onclick="subtractt();">-</button>
-        <button class="input-button" id="multiplyy" onclick="multiplyy();">*</button>
+        
+        <button class="method-button" id="sqrrt" onclick="sqrrt();">&radic;</button>
     </div>
 
     <!-- Numbers -->
@@ -48,24 +43,28 @@
         <button class="input-button" id="inputOne" onclick="inputOne();">1</button>
         <button class="input-button" id="inputTwo" onclick="inputTwo();">2</button>
         <button class="input-button" id="inputThree" onclick="inputThree();">3</button>
+        <button class="method-button" id="divide" onclick="dividee();">/</button>
     </div>
 
     <div class="center button-row">
         <button class="input-button" id="inputFour" onclick="inputFour();">4</button>
         <button class="input-button" id="inputFive" onclick="inputFive();">5</button>
         <button class="input-button" id="inputSix" onclick="inputSix();">6</button>
+        <button class="method-button" id="multiplyy" onclick="multiplyy();">&times;</button>
     </div>
 
     <div class="center button-row">
         <button class="input-button" id="inputSeven" onclick="inputSeven();">7</button>
         <button class="input-button" id="inputEight" onclick="inputEight();">8</button>
         <button class="input-button" id="inputNine" onclick="inputNine();">9</button>
+        <button class="method-button" id="subtractt" onclick="subtractt();">-</button>
     </div>
 
     <div class="center button-row">
-        <button class="input-button" id="resetButton" onclick="clearr();">Clear</button>
+        <button class="input-button reset-button" id="resetButton" onclick="clearr();">C</button>
         <button class="input-button" id="inputZero" onclick="inputZero();">0</button>
-        <button class="input-button" onclick="equals();" id="equals">=</button>
+        <button class="method-button" onclick="equals();" id="equals">=</button>
+        <button class="method-button" id="add" onclick="addd();">+</button>
     </div>
 </div>
 </body>
