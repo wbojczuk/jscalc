@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
 body {
     margin: 0;
@@ -27,39 +27,44 @@ sup {
     background-color: #00b300;
 }
 .hero-text {
-    font-size: 10vw;
-    font-family: "Kaushan Script", cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 5vw;
+    font-family: "Bungee Shade", cursive;
 }
 
 .main-wrapper {
-    background-image: url('img/background.jpg');
+    min-height: 90vw;
+    background:linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 300%;
+    animation: change 10s ease-in-out infinite;
 }
 
 
 /* Output */
 
 .print-output {
-    width: 30vw;
+    width: 24vw;
     display: inline-block;
     align-items: right;
     justify-content: right;
     font-family: "Orbitron", sans-serif;
-    font-size: 6vw;
+    font-size: 4vw;
     border: 1px solid #aaa;
     background-color: #d9d9d9;
     overflow: hidden;
     
-    margin: 2vw 0 0 3.5vw;
+    margin: 2vw 0 0 2vw;
 }
 
 
 /* Input Buttons */
 
 .input-button {
-    width: 6vw;
-    height: 5vw;
+    width: 4.6vw;
+    height: 3.6vw;
     font-size: 2.5vw;
-    margin: 0 1vw 2vw 1vw;
+    margin: 0 .8vw 1.5vw .8vw;
     border: 0px solid transparent;
     border-radius: 4px;
 }
@@ -67,10 +72,10 @@ sup {
     background-color: #bfbfbf;
 }
 .method-button {
-    width: 6vw;
-    height: 5vw;
+    width: 4.6vw;
+    height: 3.6vw;
     font-size: 2.5vw;
-    margin: 0 1vw 2vw 1vw;
+    margin: 0 .8vw 1.5vw .8vw;
     background-color: #264d73;
     color: #fff;
     border: 0px solid transparent;
@@ -93,17 +98,17 @@ sup {
 
 .calc-wrapper {
     display: inline-block;
-    width: 37vw;
+    width: 28vw;
     background-color: #aaa;
     border: 0px solid #000;
-    border-radius: 15px;
-    margin-top: 2vw;
+    border-radius: 4%;
+    margin-top: 0;
     margin-bottom: 2vw;
     box-shadow: 5px 5px 5px #595959;
 }
 .button-row {
     display: inline-block;
-    margin-left: 2vw;
+    margin-left: 1.6vw;
     border-top: 1px solid transparent;
 }
 .output-wrapper {
@@ -114,4 +119,25 @@ sup {
 }
 #cubrt {
     padding-top: .3vw;
+}
+
+/* Background Animation */
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    25% {
+        background-position: 25%  25%;
+    }
+    50% {
+        background-position: 60% 50%;
+    }
+    75% {
+        background-position: 50% 70%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
 }
