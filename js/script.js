@@ -284,6 +284,7 @@ var total;
     document.getElementById("printValueOne").innerHTML = "0";
     document.getElementById("printValueTwo").innerHTML = "";
     document.getElementById("printMethod").innerHTML = "";
+    document.getElementById("printMethodTwo").innerHTML = "";
     document.getElementById("inputOne").setAttribute("onclick", "inputOne();")
     document.getElementById("inputTwo").setAttribute("onclick", "inputTwo();")
     document.getElementById("inputThree").setAttribute("onclick", "inputThree();")
