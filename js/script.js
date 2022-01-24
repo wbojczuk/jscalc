@@ -197,6 +197,27 @@ var total;
         
     }
 
+    function powY() {
+        valueOne = parseInt(input);
+        method = "powerOfY";
+        document.getElementById("printMethodTwo").innerHTML = "";
+        document.getElementById("printMethod").innerHTML = "^";
+        document.getElementById("printValueOne").innerHTML = valueOne.toString();
+        document.getElementById("inputOne").setAttribute("onclick", "inputOne2();")
+        document.getElementById("inputTwo").setAttribute("onclick", "inputTwo2();")
+        document.getElementById("inputThree").setAttribute("onclick", "inputThree2();")
+        document.getElementById("inputFour").setAttribute("onclick", "inputFour2();")
+        document.getElementById("inputFive").setAttribute("onclick", "inputFive2();")
+        document.getElementById("inputSix").setAttribute("onclick", "inputSix2();")
+        document.getElementById("inputSeven").setAttribute("onclick", "inputSeven2();")
+        document.getElementById("inputEight").setAttribute("onclick", "inputEight2();")
+        document.getElementById("inputNine").setAttribute("onclick", "inputNine2();")
+        document.getElementById("inputZero").setAttribute("onclick", "inputZero2();")
+        input = "";
+
+        
+    }
+
     function sqrrt() {
         valueOne = parseInt(input);
         total = Math.sqrt(valueOne);
@@ -209,6 +230,32 @@ var total;
             input2 = "";
 
 
+    }
+
+    function cubrt() {
+        valueOne = parseInt(input);
+        total = Math.cbrt(valueOne);
+        document.getElementById("printValueOne").innerHTML = total.toFixed(4);
+        input = total.toFixed(0);
+            valueOne = total;
+            valueTwo = 0;
+            method = "";
+            total = 0;
+            input2 = "";
+
+
+    }
+
+    function powTwo() {
+        valueOne = parseInt(input);
+        total = Math.pow(valueOne, 2);
+        document.getElementById("printValueOne").innerHTML = total.toFixed(0);
+        input = total.toFixed(0);
+        valueOne = total;
+        valueTwo = 0;
+        method = "";
+        total = 0;
+        input2 = "";
     }
 
 
@@ -262,12 +309,48 @@ var total;
                         total = 0;
                         input2 = "";
                             } else {
-            
+                                if(method == "subtract") {
+            total = parseInt(valueOne) - parseInt(valueTwo);
+            document.getElementById("printValueTwo").innerHTML = "";
+            document.getElementById("printMethod").innerHTML = "";
+            document.getElementById("printValueOne").innerHTML = total;
+            input = total;
+            valueTwo = 0;
+            method = "";
+            total = 0;
+            input2 = "";
+                } else {
+                    if(method == "divide") {
+                        total = parseInt(valueOne) / parseInt(valueTwo);
+                        document.getElementById("printValueTwo").innerHTML = "";
+                        document.getElementById("printMethod").innerHTML = "";
+                        document.getElementById("printValueOne").innerHTML = total;
+                        input = total;
+                        valueTwo = 0;
+                        method = "";
+                        total = 0;
+                        input2 = "";
+                            } else {
+                                if(method == "powerOfY") {
+                                    total = Math.pow(parseInt(valueOne), parseInt(valueTwo));
+                                    document.getElementById("printValueTwo").innerHTML = "";
+                                    document.getElementById("printMethod").innerHTML = "";
+                                    document.getElementById("printValueOne").innerHTML = total;
+                                    input = total;
+                                    valueTwo = 0;
+                                    method = "";
+                                    total = 0;
+                                    input2 = "";
+                                        } else {
+                        
+                                        }
+                            }
                             }
                 }
             }
         }
     }
+}
 
 
     // Clear
