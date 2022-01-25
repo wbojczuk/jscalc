@@ -113,6 +113,7 @@ sup {
     display: inline-block;
     margin-left: 1.35vw;
     border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 .output-wrapper {
     border-bottom: 2px solid #8c8c8c;
@@ -120,10 +121,10 @@ sup {
 #printValueOne {
     margin-left: 1vw;
 }
-#cubrt {
-    padding-top: .3vw;
+.cubrt-span {
+    display: inline-block;
+    padding-top: .15vw;
 }
-
 /* Background Animation */
 
 @keyframes change {
