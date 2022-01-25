@@ -308,29 +308,7 @@ var total;
                         method = "";
                         total = 0;
                         input2 = "";
-                            } else {
-                                if(method == "subtract") {
-            total = parseInt(valueOne) - parseInt(valueTwo);
-            document.getElementById("printValueTwo").innerHTML = "";
-            document.getElementById("printMethod").innerHTML = "";
-            document.getElementById("printValueOne").innerHTML = total;
-            input = total;
-            valueTwo = 0;
-            method = "";
-            total = 0;
-            input2 = "";
-                } else {
-                    if(method == "divide") {
-                        total = parseInt(valueOne) / parseInt(valueTwo);
-                        document.getElementById("printValueTwo").innerHTML = "";
-                        document.getElementById("printMethod").innerHTML = "";
-                        document.getElementById("printValueOne").innerHTML = total;
-                        input = total;
-                        valueTwo = 0;
-                        method = "";
-                        total = 0;
-                        input2 = "";
-                            } else {
+                            } else {                             
                                 if(method == "powerOfY") {
                                     total = Math.pow(parseInt(valueOne), parseInt(valueTwo));
                                     document.getElementById("printValueTwo").innerHTML = "";
@@ -349,8 +327,6 @@ var total;
                 }
             }
         }
-    }
-}
 
 
     // Clear
