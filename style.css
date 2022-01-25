@@ -3,6 +3,7 @@
 
 body {
     margin: 0;
+    overflow-y: hidden;
 }
 button:hover {
     cursor: pointer;
@@ -31,6 +32,8 @@ sup {
     width: 100%;
     font-size: 5vw;
     font-family: "Bungee Shade", cursive;
+   
+    top: -2vw;
 }
 
 .main-wrapper {
